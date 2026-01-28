@@ -1,0 +1,32 @@
+.home-container {
+  padding: 40px;
+}
+
+.home-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skeleton-card {
+  width: 200px;
+  height: 350px;
+  margin: 20px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

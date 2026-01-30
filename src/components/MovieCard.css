@@ -1,13 +1,24 @@
 .movie-card {
-  width: 200px;
-  margin: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  background-color: #fff;
+   background: white;
+   border-radius: 10px;
+    padding: 12px;
+     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+       cursor: pointer;
 }
+.movie-card:hover {
+   transform: translateY(-4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+   }
+    .movie-card img {
+       width: 100%; 
+       border-radius: 8px;
+       margin-bottom: 10px;
+       }
+
+
+
+
 
 .movie-poster {
   width: 100%;

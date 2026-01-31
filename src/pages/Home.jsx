@@ -45,8 +45,9 @@ function Home() {
     if (initialQuery) {
       searchMovies(initialQuery);
     }
-  }, []);
+  }, [initialQuery, searchMovies]
 
+  );
   return (
     <div className="home-container">
       <h2 className="home-title">Movie Search</h2>
